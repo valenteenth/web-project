@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Услуги</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <script src="js/services.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><div class="logo"></div></a>
+      <nav>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="order.html">Как заказать</a></li>
+          <li><a href="cost.html">Отзывы</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="theme">
+      <select id="theme-selector">
+        <option value="light">Светлая тема</option>
+        <option value="dark">Темная тема</option>
+    </select>
+    <button id="reset-theme">Сбросить тему</button>
+      </div>
+    </header>
+    <main>
+      <div class="top">
+        <h2>Услуги</h2>
+        <a href="index.html">На главную страницу</a>
+      </div>
+      <div class="bottom">
+        <div class="link-container">
+          <div class="link">
+            <a
+              class="boostrank"
+              href="boostrank.html"
+              target="_self"
+              data-type="url"
+            >
+              <span class="buttonrank">Буст ранга</span>
+            </a>
+          </div>
+          <div class="link">
+            <a
+              class="boostwin"
+              href="boostwin.html"
+              target="_self"
+              data-type="url"
+            >
+              <span class="buttonrank">Буст побед</span>
+            </a>
+          </div>
+          <div class="link">
+            <a
+              class="calibration"
+              href="calibration.html"
+              target="_self"
+              data-type="url"
+            >
+              <span class="buttonrank">Калибровочные игры</span>
+            </a>
+          </div>
+          <div class="link">
+            <a class="coach" href="test.html" target="_self" data-type="url">
+              <span class="buttonrank">Тест для выбора тренера</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="joke-container">
+          <button id="joke">Get Joke</button>
+          <p id="setup"></p>
+          <p id="punchline"></p>
+      </div>
+  </footer> 
+  </body>
+</html>

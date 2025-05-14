@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Буст ранга</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/boostrank.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><div class="logo"></div></a>
+      <nav>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="order.html">Как заказать</a></li>
+          <li><a href="cost.html">Отзывы</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="theme">
+      <select id="theme-selector">
+        <option value="light">Светлая тема</option>
+        <option value="dark">Темная тема</option>
+    </select>
+    <button id="reset-theme">Сбросить тему</button>
+      </div>
+    </header>
+    <main>
+      <div class="top">
+        <h2>Буст ранга</h2>
+        <a href="services.html">Назад</a>
+      </div>
+      <div class="info">
+        <div class="container4">
+          <div class="container1">
+            <label for="currentRank"
+              ><span class="currentrank">Выберите текущий ранг:</span></label
+            >
+            <div id="currentRankSelection">
+              <img
+                src="img/ranks/iron.png"
+                class="rank-image"
+                id="iron"
+                title="Iron"
+              />
+              <img
+                src="img/ranks/bronze.png"
+                class="rank-image"
+                id="bronze"
+                title="Bronze"
+              />
+              <img
+                src="img/ranks/silver.png"
+                class="rank-image"
+                id="silver"
+                title="Silver"
+              />
+              <img
+                src="img/ranks/gold.png"
+                class="rank-image"
+                id="gold"
+                title="Gold"
+              />
+              <img
+                src="img/ranks/platinum.png"
+                class="rank-image"
+                id="platinum"
+                title="Platinum"
+              />
+              <img
+                src="img/ranks/diamond.png"
+                class="rank-image"
+                id="diamond"
+                title="Diamond"
+              />
+              <img
+                src="img/ranks/ascendant.png"
+                class="rank-image"
+                id="ascendant"
+                title="Ascendant"
+              />
+              <img
+                src="img/ranks/immortal.png"
+                class="rank-image"
+                id="immortal"
+                title="Immortal"
+              />
+            </div>
+            <div id="rank-text"></div>
+            <p class="rr-text">Текущее RR</p>
+            <div class="form-select-wrapper">
+              <select
+                class="form-select"
+                id="current-lp"
+                name="val-currentLP"
+                aria-label="Select Current RR"
+              >
+                <option id="rr" value="0-20">0-20 RR</option>
+                <option id="rr" value="21-40">21-40 RR</option>
+                <option id="rr" value="41-60">41-60 RR</option>
+                <option id="rr" value="61-80">61-80 RR</option>
+                <option id="rr" value="81-100">81-100 RR</option>
+              </select>
+            </div>
+            <div class="currentimage">
+              <img id="current-image" src="" />
+            </div>
+          </div>
+          <div class="container2">
+            <label for="desiredRank"
+              ><span class="desiredrank">Выберите желаемый ранг:</span></label
+            >
+            <div id="desiredRankSelection">
+              <img
+                src="img/ranks/iron.png"
+                class="rank-image"
+                id="iron"
+                title="Iron"
+              />
+              <img
+                src="img/ranks/bronze.png"
+                class="rank-image"
+                id="bronze"
+                title="Bronze"
+              />
+              <img
+                src="img/ranks/silver.png"
+                class="rank-image"
+                id="silver"
+                title="Silver"
+              />
+              <img
+                src="img/ranks/gold.png"
+                class="rank-image"
+                id="gold"
+                title="Gold"
+              />
+              <img
+                src="img/ranks/platinum.png"
+                class="rank-image"
+                id="platinum"
+                title="Platinum"
+              />
+              <img
+                src="img/ranks/diamond.png"
+                class="rank-image"
+                id="diamond"
+                title="Diamond"
+              />
+              <img
+                src="img/ranks/ascendant.png"
+                class="rank-image"
+                id="ascendant"
+                title="Ascendant"
+              />
+              <img
+                src="img/ranks/immortal.png"
+                class="rank-image"
+                id="immortal"
+                title="Immortal"
+              />
+              <img
+                src="img/ranks/radiant.png"
+                class="rank-image"
+                id="radiant"
+                title="Radiant"
+              />
+            </div>
+            <div id="rank-text"></div>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="order">
+            <label for="finalorder"
+              ><span class="myorder">Мой заказ</span></label
+            >
+            <div class="desired-current">
+              <div id="rank-text"></div>
+              <div class="container2__ranks">
+                <div class="current-image">
+                  <img id="current-image" class="hidden" src="" />
+                  <p id="current"></p>
+                </div>
+                <svg
+                  width="52"
+                  height="16"
+                  viewBox="0 0 52 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hidden"
+                  id="rankArrow"
+                >
+                  <path
+                    d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
+                    fill="black"
+                  />
+                </svg>
+                <div class="desired-image">
+                  <img id="desired-image" class="hidden" src="" />
+                  <p id="desired"></p>
+                </div>
+              </div>
+              <button class="calculate">Calculate Boost</button>
+              <p id="boostResult"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="js/boostrank.js"></script>
+</html>

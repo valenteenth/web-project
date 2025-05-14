@@ -1,0 +1,106 @@
+:root {
+    --bg-clr: #fcf8f8;
+    --text-blue-clr: #d65aa5;
+    --text-lightblue-clr: #c273a9;
+    --text-gray-clr:  rgb(247, 242, 242);
+    --main-text-clr:  #c859aa;
+    --bg-gray-clr: rgb(217, 35, 138);
+  }
+  body {
+    background-color: var(--bg-clr);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw 0.5vw;
+  }
+  
+  main h1 .blue {
+    color: var(--text-blue-clr);
+    font-size: 4vw;
+  }
+  main h1 .lightblue {
+    color: var(--text-lightblue-clr);
+    font-size: 3vw;
+  }
+  main h1 .gray {
+    display: inline-block;
+    margin-top: 1vw;
+    padding: 5px 10px 10px;
+    border-radius: 20px;
+    background-color: var(--bg-gray-clr);
+    color: var(--text-gray-clr);
+    font-size: 2.5vw;
+  }
+  main .text {
+    max-width: 30vw;
+    margin-top: 1vw;
+  
+    color:var(--main-text-clr);
+    font-size: 2vw;
+    font-weight: 700;
+  }
+  
+  .right-image {
+    float: right;
+    margin-left: 1vw;
+    margin-right: 10vw;
+    width: 90%;
+    margin-top: 15%;
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow-x: hidden;
+  }
+  .right-image:hover {
+    transform: scale(1.05);
+  }
+  [data-theme="dark"] {
+    --bg-img: url("../img/header/фон.png");
+    --text-blue-clr: rgb(116, 91, 182);
+    --text-lightblue-clr: #4f2195;
+    --text-gray-clr:  #8855bc;
+    --main-text-clr:  #592d78;
+    --bg-gray-clr:  #08142e;
+  }
+  body {
+    background-image: var(--bg-img)
+  }
+  
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 50px 25px 20px;
+    }
+  
+    .right-image {
+      width: 100vw;
+    }
+  
+    main h1 .blue {
+      font-size: 15vw;
+    }
+  
+    main h1 .lightblue {
+      font-size: 10vw;
+    }
+  
+    main h1 .gray {
+      padding: 3px 5px 5px;
+      border-radius: 10px;
+      font-size: 8vw;
+      margin-top: 3vw;
+    }
+  
+    main .text {
+      max-width: none;
+      margin-top: 50px;
+      font-size: 7vw;
+    }
+  }
+  
