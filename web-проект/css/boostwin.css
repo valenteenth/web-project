@@ -1,12 +1,14 @@
 :root {
-  --bg-img: url("../img/global/новария.jpg");
+  --bg-img: url("../img/global/кагура.jpg");
+  --form-color: white;
   --behindtext-color: white;
-  --p-color: #da5cb6;
-  --brdr-color: rgb(252, 237, 251);
-  --rankbhnd-color: rgb(207, 62, 187);
-  --ranktext-color: rgb(255, 255, 255);
-  --calc-bhnd-color: rgb(180, 48, 158);
-  --form-color: #fff;
+  --p-color:#bc29ccaa;
+  --brdr-color: beige;
+  --rankbhnd-color: rgba(212, 0, 255, 0.581);
+  --ranktext-color: white;
+  --calc-bhnd-color: rgb(228, 106, 231);
+  --slider-color:#d639d6;
+
 }
 main {
   padding: 25px;
@@ -43,7 +45,7 @@ main .top h2 {
   background-color: var(--form-color);
   border-radius: 25px;
 
-  color: #861e60;
+  color: #e485bede;
   font-size: 30px;
 }
 
@@ -62,12 +64,12 @@ a:hover {
 main .top a,
 main .top a:active,
 main .top a:visited {
-  color: rgb(191, 113, 195);
+  color: beige;
 }
 main .info p {
   color: var(--p-color);
   font-weight: 700;
-  padding-bottom: 10px;
+  padding-bottom: 0.5vw;
   font-size: 1.3vw;
 }
 .rank-image {
@@ -79,7 +81,7 @@ main .info p {
   border-color: beige;
   border-radius: 0.5vw;
   padding: 0.25vw;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(215, 209, 209);
   position: relative;
   transition: transform 0.2s ease-in-out;
 }
@@ -154,17 +156,7 @@ main .info p {
   justify-content: space-between;
   box-sizing: border-box;
 }
-.desiredrank {
-  display: inline-block;
-  margin-left: 3vw;
-  margin-top: 1vw;
-  padding: 0.2vw 0.5vw 0.2vw;
-  border-radius: 0.8vw;
-  background-color: var(--rankbhnd-color);
-  color: var(--ranktext-color);
-  font-size: 1.5vw;
-  margin-bottom: 2vw;
-}
+
 .container1 {
   margin-top: 1.3vw;
   padding: 0 10vw;
@@ -175,7 +167,7 @@ main .info p {
   border-radius: 10px;
   height: 16vw;
   margin-left: 5vw;
-  border-color:var(--brdr-color);
+  border-color: beige;
   background-color: var(--behindtext-color);
   margin-bottom: 5vw;
 }
@@ -191,7 +183,7 @@ main .info p {
   border-radius: 10px;
   height: 12vw;
   margin-left: 5vw;
-  border-color:var(--brdr-color);
+  border-color: beige;
   background-color: var(--behindtext-color);
 }
 .container3 {
@@ -202,8 +194,8 @@ main .info p {
   width: 35vw;
   text-align: center;
   border-radius: 10px;
-  height: 25vw;
-  border-color:var(--brdr-color);
+  height: 22vw;
+  border-color: beige;
   background-color: var(--behindtext-color);
   flex: 1;
   margin-right: 7vw;
@@ -219,11 +211,11 @@ main .info p {
 }
 .calculate {
   display: inline-block;
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-bottom: 2vw;
   padding: 0.5vw 0.5vw 0.5vw;
   border-radius: 5px;
-  background-color: var(--calc-bhnd-color);
+  background-color: var(--rankbhnd-color);
   color: var(--ranktext-color);
   font-size: 1vw;
   text-align: center;
@@ -274,17 +266,19 @@ main .info p {
   }
 }
 [data-theme="dark"] {
-  --bg-img:  url("../img/global/дариус.jpg");
+  --bg-img:  url("../img/global/гренжер.jpg");
+  --form-color: #e0e0e0;
   --behindtext-color: #1e4086;
   --p-color: #e0e0e0;
   --brdr-color: #e0e0e0;
   --rankbhnd-color: #e0e0e0;
   --ranktext-color: #1e4086;
   --calc-bhnd-color: #e0e0e0;
-  --form-color: #e0e0e0;
+  --slider-color: #e0e0e0;
+
 }
 body {
-  background-image: var(--bg-img);
+  background-image: var(--bg-img)
 }
 @media screen and (max-width: 768px) {
   main .info {
@@ -306,6 +300,8 @@ body {
   }
   .calculate {
     margin-top: 5vw;
+    width: 15vw;
+    height: 3vw;
   }
   .rank-image {
     width: 5vw;
@@ -324,17 +320,76 @@ body {
   select#current-lp.form-select {
     font-size: 1.5vw;
   }
-  span.currentrank {
+  p#bottom {
     font-size: 2vw;
+    margin-top: 0.5vw;
   }
-  span.desiredrank {
+  span.currentrank {
     font-size: 2vw;
   }
   span.myorder {
     font-size: 2vw;
   }
-
 }
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  margin: 1.3vw 0;
+}
+
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: var(--slider-color);
+  border-radius: 0.5rem;
+  height: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  margin-top: -8px; 
+  background-color: #000000;
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #000000;
+  outline-offset: 0.125rem;
+}
+
+
+input[type="range"]::-moz-range-track {
+  background-color: #6670f4;
+  border-radius: 0.5rem;
+  height: 1rem;
+}
+
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #000000;
+  border: none; 
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #000000;
+  outline-offset: 0.125rem;
+}
+
 .rank-selected {
   transform: scale(1.05);
   background: rgba(0, 0, 0, 0);
@@ -356,4 +411,19 @@ body {
 .container2__ranks img {
   width: 5vw;
   height: 5vw;
+}
+
+.desired-wins {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.desired-wins #desired {
+  font-size: 2vw;
+}
+
+.desired-wins #desired-title {
+  font-size: 1.4vw;
 }
