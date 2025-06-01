@@ -1,0 +1,133 @@
+:root {
+  --bg-img:  url("../img/global/линг.jpg");
+  --form-color: #f6e8e8;
+  --pgldn-color: rgba(232, 228, 25, 0.907);
+  --text-color: beige;
+  --behindtext-color: white;
+  --p-color: #889019;
+}
+main {
+  padding: 25px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: var(--bg-img);
+  filter: blur(10px);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+main .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .top h2 {
+  padding: 9px 12px 12px;
+  background-color: var(--form-color);
+  border-radius: 25px;
+
+  color: #861e81;
+  font-size: 30px;
+}
+
+main .top a {
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main .top a,
+main .top a:active,
+main .top a:visited {
+  color: beige;
+}
+
+main .text {
+  margin-top: 30px;
+}
+
+main .text p {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+main .text p .lightblue {
+  color: var(--pgldn-color);
+  font-size: 40px;
+}
+
+main .test {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+
+main .test .question {
+  padding: 8px 11px 11px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--p-color);
+  background-color: var(--behindtext-color);
+  border-radius: 20px;
+  text-align: center;
+}
+
+main .test .answers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main .test .answers img {
+  width: 230px;
+  border-radius: 40px;
+}
+[data-theme="dark"] {
+  --bg-img:  url("../img/global/харли.jpg");
+  --form-color: #e0e0e0;
+  --pgldn-color: rgb(89, 162, 246);
+  --text-color: #e0e0e0;
+  --behindtext-color: #1e4086;
+  --p-color: #e0e0e0;
+}
+body {
+  background-image: var(--bg-img)
+}
+@media screen and (max-width: 768px) {
+  main .top {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  main .test {
+    max-width: none;
+  }
+
+  main .test .question {
+    font-size: 18px;
+  }
+
+  main .test .answers img {
+    width: 40vw;
+    border-radius: 15px;
+  }
+}
