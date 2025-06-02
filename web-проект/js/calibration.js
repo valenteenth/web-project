@@ -9,31 +9,31 @@ let currentRank = "";
 
 function updateCost(rank) {
   switch (rank) {
-    case "iron":
+    case "voin":
       costPerGame = 1;
       break;
-    case "bronze":
+    case "elita":
       costPerGame = 2;
       break;
-    case "silver":
+    case "master":
       costPerGame = 2;
       break;
-    case "gold":
+    case "grandmaster":
       costPerGame = 2;
       break;
-    case "platinum":
+    case "epic":
       costPerGame = 2;
       break;
-    case "diamond":
+    case "lega":
       costPerGame = 3;
       break;
-    case "ascendant":
+    case "mif":
       costPerGame = 4;
       break;
-    case "immortal":
+    case "mifsl":
       costPerGame = 5;
       break;
-    case "radiant":
+    case "mifch":
       costPerGame = 5;
       break;
     default:

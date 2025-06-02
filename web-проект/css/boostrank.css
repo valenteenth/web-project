@@ -1,5 +1,5 @@
 :root {
-  --bg-img: url("../img/global/новария.jpg");
+  --bg-img: url("../img/global/nova.jpg");
   --behindtext-color: white;
   --p-color: #da5cb6;
   --brdr-color: rgb(252, 237, 251);
@@ -274,7 +274,7 @@ main .info p {
   }
 }
 [data-theme="dark"] {
-  --bg-img:  url("../img/global/дариус.jpg");
+  --bg-img:  url("../img/global/darius.jpg");
   --behindtext-color: #1e4086;
   --p-color: #e0e0e0;
   --brdr-color: #e0e0e0;
@@ -292,12 +292,12 @@ body {
     padding: 0;
   }
   .container1 {
-    width: 48vw;
-    height: 25vw;
+    width: 40vw;
+    height:10vw;
   }
   .container2 {
     width: 48vw;
-    height: 20vw;
+    height: 10vw;
   }
   .container3 {
     width: 40vw;
@@ -308,8 +308,8 @@ body {
     margin-top: 5vw;
   }
   .rank-image {
-    width: 5vw;
-    height: 5vw;
+    width: 10vw;
+    height: 8vw;
   }
   .form-select {
     width: 45vw;

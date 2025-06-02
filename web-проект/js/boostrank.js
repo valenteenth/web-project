@@ -8,15 +8,15 @@ function calculateBoost() {
   }
 
   const rankPrices = {
-    iron: 1,
-    bronze: 2,
-    silver: 3,
-    gold: 4,
-    platinum: 5,
-    diamond: 6,
-    ascendant: 7,
-    immortal: 8,
-    radiant: 9,
+    voin: 1,
+    elita: 2,
+    master: 3,
+    grandmaster: 4,
+    epic: 5,
+    lega: 6,
+    mif: 7,
+    mifsl: 8,
+    mifch: 9,
   };
 
   const rrRanges = {

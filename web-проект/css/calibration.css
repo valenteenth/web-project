@@ -1,5 +1,5 @@
 :root {
-  --bg-img: url("../img/global/флоринсвет.jpg");
+  --bg-img: url("../img/global/florinsv.jpg");
   --form-color: white;
   --behindtext-color: white;
   --p-color: rgba(220, 90, 229, 0.548);
@@ -266,7 +266,7 @@ main .info p {
   }
 }
 [data-theme="dark"] {
-  --bg-img:  url("../img/global/флорин.jpg");
+  --bg-img:  url("../img/global/florin.jpg");
   --form-color: #e0e0e0;
   --behindtext-color: #1e4086;
   --p-color: #e0e0e0;

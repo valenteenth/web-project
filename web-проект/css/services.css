@@ -1,5 +1,5 @@
 :root {
-  --bg-img: url("../img/global/ангела.jpg");
+  --bg-img: url("../img/global/angel.jpg");
   --behindtext-color: rgb(249, 247, 229);
   --p-color: rgb(187, 36, 159);
   --form-color: rgb(248, 251, 225);
@@ -130,7 +130,7 @@ p#punchline {
   margin-right: 5vw;
 }
 [data-theme="dark"] {
-  --bg-img:  url("../img/global/гренжер.jpg");
+  --bg-img:  url("../img/global/grenger.jpg");
   --behindtext-color: #330661;
   --p-color: #e0e0e0cf;
   --form-color: #a7a3a3;

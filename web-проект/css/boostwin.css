@@ -1,5 +1,5 @@
 :root {
-  --bg-img: url("../img/global/кагура.jpg");
+  --bg-img: url("../img/global/kagura.jpg");
   --form-color: white;
   --behindtext-color: white;
   --p-color:#bc29ccaa;
@@ -266,7 +266,7 @@ main .info p {
   }
 }
 [data-theme="dark"] {
-  --bg-img:  url("../img/global/гренжер.jpg");
+  --bg-img:  url("../img/global/in.jpg");
   --form-color: #e0e0e0;
   --behindtext-color: #1e4086;
   --p-color: #e0e0e0;

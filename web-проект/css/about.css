@@ -1,5 +1,5 @@
 :root {
-    --bg-img: url("../img/global/вексана.png");
+    --bg-img: url("../img/global/vexsaana.png");
     --behindtext-color: rgb(97, 37, 182);
     --p-color: #e3e0ec;
     --form-color: rgb(234, 230, 247);
@@ -78,7 +78,7 @@
   }
   
   [data-theme="dark"] {
-    --bg-img:  url("../img/global/все.jpg");
+    --bg-img:  url("../img/global/vce.jpg");
     --behindtext-color: #1e4086;
     --p-color: #bdc5f2;
     --form-color: #6e69aa;

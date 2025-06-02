@@ -60,7 +60,7 @@
     transform: scale(1.05);
   }
   [data-theme="dark"] {
-    --bg-img: url("../img/header/фон.png");
+    --bg-img: url("../img/header/fon.png");
     --text-blue-clr: rgb(116, 91, 182);
     --text-lightblue-clr: #4f2195;
     --text-gray-clr:  #8855bc;
