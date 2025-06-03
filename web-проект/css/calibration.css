@@ -97,60 +97,6 @@ main .info p {
   font-size: 1.5vw;
   margin-bottom: 2vw;
 }
-.rank-image#iron:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: gray;
-  box-shadow: inset 0 0 0 3px gray;
-}
-.rank-image#silver:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: silver;
-  box-shadow: inset 0 0 0 3px silver;
-}
-.rank-image#bronze:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: rgb(59, 30, 6);
-  box-shadow: inset 0 0 0 3px rgb(59, 30, 6);
-}
-.rank-image#gold:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: goldenrod;
-  box-shadow: inset 0 0 0 3px goldenrod;
-}
-.rank-image#platinum:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: #3a7999;
-  box-shadow: inset 0 0 0 3px #3a7999;
-}
-.rank-image#diamond:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: palevioletred;
-  box-shadow: inset 0 0 0 3px plum;
-}
-.rank-image#ascendant:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: green;
-  box-shadow: inset 0 0 0 3px green;
-}
-.rank-image#immortal:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: red;
-  box-shadow: inset 0 0 0 3px red;
-}
-.rank-image#radiant:hover {
-  transform: scale(1.05);
-  background: rgba(0, 0, 0, 0);
-  color: yellow;
-  box-shadow: inset 0 0 0 3px rgb(235, 235, 20);
-}
 .info {
   display: flex;
   justify-content: space-between;
