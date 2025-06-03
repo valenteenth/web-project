@@ -1,10 +1,10 @@
 :root {
   --bg-img:  url("../img/global/ling.jpg");
   --form-color: #f6e8e8;
-  --pgldn-color: rgba(232, 228, 25, 0.907);
+  --pgldn-color: rgba(160, 27, 226, 0.907);
   --text-color: beige;
   --behindtext-color: white;
-  --p-color: #889019;
+  --p-color: #471990;
 }
 main {
   padding: 25px;
